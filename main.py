@@ -16,18 +16,18 @@ load_dotenv(file_location)
 def request_API():
  load_dotenv(file_location)
  try :
-  API_KEY = os.getenv("TWITTER_API_KEY")
-  API_SECRET = os.getenv("TWITTER_API_SECRET")
-  ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
-  ACCESS_SECRET = os.getenv("TWITTER_ACCESS_SECRET")
+  API_KEY = os.getenv("X_API_KEY")
+  API_SECRET = os.getenv("X_API_SECRET")
+  ACCESS_TOKEN = os.getenv("X_ACCESS_TOKEN")
+  ACCESS_SECRET = os.getenv("X_ACCESS_SECRET")
   if not all([API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_SECRET]):
-        raise ValueError("Une ou plusieurs clés d'API sont manquantes dans le fichier .env")
+        raise ValueError("One or more API clicks are available in the file.env")
  
   auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
   auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
   api=tweepy.API(auth, wait_on_rate_limit=True)
   api.verify_credentials()
-  print("[green]Successfully authenticated to Twitter API[/green]")
+  print("[green]Successfully authenticated to X API[/green]")
   return api
  except Exception as e:
         print(f"[red]Authentication Error: {e}[/red]")
@@ -37,10 +37,10 @@ def request_API():
 
 def Checking_the_connection():
  # To recover Keys API
- API_KEY = os.getenv("TWITTER_API_KEY")
- API_SECRET = os.getenv("TWITTER_API_SECRET")
- ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
- ACCESS_SECRET = os.getenv("TWITTER_ACCESS_SECRET")
+ API_KEY = os.getenv("X_API_KEY")
+ API_SECRET = os.getenv("X_API_SECRET")
+ ACCESS_TOKEN = os.getenv("X_ACCESS_TOKEN")
+ ACCESS_SECRET = os.getenv("X_ACCESS_SECRET")
 
  # Authentication with Tweepy
  auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
@@ -50,7 +50,7 @@ def Checking_the_connection():
  # Checking the connection
  try:
   api.verify_credentials()
-  print("[green bold]Successfully connected to Twitter API!")
+  print("[green bold]Successfully connected to X API!")
  except tweepy.TweepError as e:
   print(f"[red bold]Connection error : {e}")
 
@@ -220,11 +220,11 @@ def display_menu():
     
     console = Console()
     menu_panel = Panel(
-        "[yellow]1.[/yellow] [blue]Check Connection with Twitter API[/blue]\n"
+        "[yellow]1.[/yellow] [blue]Check Connection with X API[/blue]\n"
         "[yellow]2.[/yellow] [blue]Search by Keyword[/blue]\n"
         "[yellow]3.[/yellow] [blue]Search by User[/blue]\n"
         "[yellow]0.[/yellow] [red]Exit[/red]",
-        title="[bold green]Twitter Analysis Tool[/bold green]",
+        title="[bold green]X Analysis Tool[/bold green]",
         border_style="cyan"
     )
     console.print(menu_panel)
