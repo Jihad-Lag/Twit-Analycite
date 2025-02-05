@@ -12,8 +12,10 @@ Twit-Analytice is my first project in Python, where I explore working with the T
 
 ## **🛠️ Installation**  
 To install the required dependencies, run the following command:  
-
-`pip install tweepy pandas python-dotenv rich` 
+```
+bash
+pip install tweepy pandas python-dotenv rich
+``` 
 
 ## 📜 How to Use  
 1️⃣ Set up your Twitter API keys in a .env file
