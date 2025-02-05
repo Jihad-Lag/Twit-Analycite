@@ -15,7 +15,7 @@ To install the required dependencies, run the following command:
 
 `pip install tweepy pandas python-dotenv rich` 
 
-## 📜 How to Use**  
+## 📜 How to Use  
 1️⃣ Set up your Twitter API keys in a .env file
 2️⃣ Run the script to fetch tweets and save them
 3️⃣ Analyze the exported data in Excel or with Pandas
