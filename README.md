@@ -1,11 +1,11 @@
 ## **Twit-Analytice** 🐦📊 
-**A Twitter Data Analysis and Reporting Tool** 
+**A X Data Analysis and Reporting Tool** 
 
 ## **🔍 About the Project**  
-Twit-Analytice is my first project in Python, where I explore working with the Twitter API. This tool helps Twitter influencers and content creators extract, analyze, and visualize their tweet data. The goal is to provide insights that can improve engagement, content strategy, and audience growth.  
+Twit-Analytice is my first project in Python, where I explore working with the X API. This tool helps X influencers and content creators extract, analyze, and visualize their tweet data. The goal is to provide insights that can improve engagement, content strategy, and audience growth.  
 
 ## **🚀 Features**  
-✅ Fetch tweets from any user using Twitter API
+✅ Fetch tweets from any user using X API
 ✅ Export tweet data to CSV/Excel for further analysis 
 ✅ Analyze tweet performance (likes, retweets, and engagement trends)  
 ✅ Simple and efficient API authentication setup 
@@ -24,4 +24,4 @@ pip install tweepy pandas python-dotenv rich
 
 
 ## **📘 Documentation**  
- Refer to the official Twitter API Docs for API details.
+ Refer to the official X API Docs for API details.
