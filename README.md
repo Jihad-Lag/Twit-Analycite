@@ -1,4 +1,4 @@
-"""# **Twit-Analytice** 🐦📊 
+## **Twit-Analytice** 🐦📊 
 **A Twitter Data Analysis and Reporting Tool** 
 
 ## **🔍 About the Project**  
